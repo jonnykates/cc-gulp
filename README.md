@@ -2,6 +2,8 @@
 
 This repository contains the Gulpfile that I sometimes use when I am developing for Raising IT. Ultimately, it allows for local `.scss` changes to be reflected live in your browser, despite the platform being on a live remote server. No more refreshing the page to see your changes! I find that this makes my workflow more efficient, so I thought I'd share with other Raising IT designers.
 
+### DISCLAIMER
+Whilst nothing here is super complicated, it's certainly more verbose than just compiling your Sass using the vanilla Sass command line tool, or using some kind of GUI compiler like [CodeKit](https://codekitapp.com/). Things may fall over. If you get stuck then just Slack me.
 
 ## About Gulp
 [Gulp](http://gulpjs.com/) is a task runner. You write short jobs for it to do, and then it executes them as and when you need them. One example might be to tell Gulp to listen for any changes made to a `.scss` partial, and then compile the `main.scss` file when it detects a change.
