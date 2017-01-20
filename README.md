@@ -53,7 +53,9 @@ The first - on port 8000 - is serving our local .css and .js files. The second, 
 **NB** - Importantly, the Gulp task is actually still running in the background. It's now listening for any changes you make to .scss partials. When it notices a change, it's going to compile `main.scss` and refresh your localhost:3000 browser!
 
 ## 4. Point your platform to your served files
-Of course, we need to tell the platform where our local .css and .js files are. In your custom code areas in the Platform, you need to add the following to the head:
+Of course, we need to tell the platform where our local .css and .js files are. It's important to realise that these files are being served by the local server running on port 8000; *not* the proxy server on port 5000.
+
+So in your custom code areas in the Platform, you need to add the following to the head:
 
 ```
 <link rel="stylesheet" type="text/css" href="http://localhost:8000/main.css">
